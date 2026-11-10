@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.env
+
+# Private notes and blog captures. Never commit: see AGENTS.md.
+docs/blog/
+
+# The bar's OpenAPI spec is BUSY's file: fetch it from the device (see AGENTS.md).
+docs/openapi-*.yaml

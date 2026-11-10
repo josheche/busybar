@@ -1,0 +1,29 @@
+{
+  "name": "busybar",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-2.0-or-later",
+  "type": "module",
+  "description": "Widgets and integrations for the BUSY Bar",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "smoke": "tsx scripts/smoke.ts",
+    "screenshot": "tsx scripts/screenshot.ts",
+    "spotify": "tsx src/widgets/spotify/index.ts",
+    "claude": "tsx src/widgets/claude/index.ts",
+    "claude:hooks": "tsx scripts/install-claude-hooks.ts",
+    "type-check": "tsc --noEmit",
+    "pr-queue-relay": "tsx src/widgets/pr-queue-relay/index.ts"
+  },
+  "dependencies": {
+    "@busy-app/busy-lib": "~0.21.1",
+    "sharp": "~0.34.2"
+  },
+  "devDependencies": {
+    "@types/node": "~22.15.0",
+    "tsx": "~4.19.0",
+    "typescript": "~5.8.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": 1,
+  "version": 2,
+  "fields": {
+    "relay": {
+      "label": "Mac relay address",
+      "description": "The PR Queue relay on your Mac, reached over the USB cable. No GitHub token is stored on the bar.",
+      "type": "string",
+      "default": "http://10.0.4.21:8787",
+      "max_length": 64
+    },
+    "demo": {
+      "label": "Show demo data",
+      "description": "Invented pull requests, safe for screenshots.",
+      "type": "boolean",
+      "default": false
+    },
+    "chime": {
+      "label": "Chime on a new review request",
+      "description": "The status LED always blinks. This adds a sound.",
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
